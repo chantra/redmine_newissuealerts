@@ -3,9 +3,20 @@
 Redmine NewIssueAlert is a Redmine plugin that sends an email to specified
 email addresses when a new issue is logged
 
-Created by Emmanuel Bretelle aka chantra
+Created by Emmanuel Bretelle aka chantra <chantra_-_AT_-_debuntu_-_DOT_-_org>
 
-= Installation
+= Purpose:
+
+This plugin can be use to make sure that a new issue is getting the exposure it needs. For instance, you might decide that
+any new issue logged on a specific project is sent to a distribution email address. People from that distribution email list 
+will then be able to triage the new issue and assign it to the right person.
+
+The reason the plugin was created was because I did not find assign tickets to a group of users using redmine stock functionnalities.
+This can, to some extend, resolve http://www.redmine.org/issues/408
+
+People from that group and/or manager will still have to assign the issue to the right person though.
+
+= Installation:
 To install the plugin, follow the steps in http://www.redmine.org/wiki/1/Plugins
 
 Don't forget to create the database with:

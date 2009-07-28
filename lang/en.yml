@@ -21,4 +21,4 @@ newissuealerts_deletion_failed: New Issue Alert could not be deleted
 newissuealerts_update_success: New Issue Alert successfully updated
 newissuealerts_update_failed: New Issue Alert could not be updated
 # mailer
-newissuealerts_footer: You have received this notification because you this email was added to the New Issue Alert plugin
+newissuealerts_footer: You have received this notification because this email was added to the New Issue Alert plugin
