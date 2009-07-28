@@ -1,0 +1,15 @@
+<h2><%= l(:newissuealerts_edit, @project.name) %></h2>
+<% form_for :newissuealert, @newissuealert , :url => { :project_id => @project.id }do |f| %>
+  <%= f.error_messages %>
+<div class="box tabular settings">
+  <p>
+    <%= f.label l(:email_addresses) %> <%= f.text_field :mail_addresses, :size => 60 %><br />
+    <em><%= l(:email_addresses_comma_separated) %></em>
+  </p>
+  <p>
+   <%= f.label l(:enabled) %> <%= f.check_box :enabled %> 
+  </p>
+  <p>  <%= submit_tag l(:edit), :name => "edit" %> <%= submit_tag l(:delete), :name => "delete", :confirm => l(:newissuealerts_deletion_confirm) %> </p>
+</div>
+<% end %>
+

@@ -1,0 +1,25 @@
+= newissuealerts
+
+Redmine NewIssueAlert is a Redmine plugin that sends an email to specified
+email addresses when a new issue is logged
+
+Created by Emmanuel Bretelle aka chantra
+
+= Installation
+To install the plugin, follow the steps in http://www.redmine.org/wiki/1/Plugins
+
+Don't forget to create the database with:
+
+    rake db:migrate_plugins RAILS_ENV=production
+
+= Usage:
+
+This plugin works on a per project basis.
+To enable it, go to Project->Settings->Modules and enable "Newissuealerts"
+
+By default only redmine managers can access the plugin settings. Administrators need to enable access to project managers...
+through http://redmine.url/roles/report under the "Newissuealerts" section.
+
+A tab called "Email on New Issue" will appear on project which have enabled the plugin providing that the user has enough credential.
+
+New Issue Alerts can be created/enabled/disabled from that page.
