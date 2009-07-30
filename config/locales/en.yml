@@ -7,6 +7,7 @@ en:
   newissuealerts_deletion_confirm: Are you sure you want to delete this item?
   edit: Edit
   delete: Delete
+  enabled: Enabled
   # new view
   newissuealerts_new: Creating a New Issue Alert for <em>%s</em>
   create: Create

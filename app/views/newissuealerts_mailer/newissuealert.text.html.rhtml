@@ -1,4 +1,10 @@
-<%= l(:text_issue_added, "##{@issue.id}", @issue.author) %>
+<<%= 
+if l(:this_is_gloc_lib) == 'this_is_gloc_lib'
+  l(:text_issue_added, "##{@issue.id}", @issue.author)
+else
+  l(:text_issue_added, :id => "##{@issue.id}", :author => @issue.author)
+end
+%>
 <hr />
 <%= render :partial => "issue_text_html", :locals => { :issue => @issue, :issue_url => @issue_url } %>
 <hr />
