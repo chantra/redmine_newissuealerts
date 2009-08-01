@@ -13,7 +13,7 @@ For the complete changelog see the <tt>CHANGELOG</tt>-file in the Redmine New Is
 
 ==Latest stable release
 
-The currently available, latest stable release of the plugin is version <b>0.2.0</b>.
+The currently available, latest stable release of the plugin is version <b>0.0.2</b>.
 
 ==Purpose
 
