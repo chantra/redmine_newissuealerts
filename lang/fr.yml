@@ -4,7 +4,7 @@ email_addresses: Adresses Emails
 enabled: Actif
 email_addresses_comma_separated: Les emails sont s&eacute;par&eacute;s par des virgules
 newissuealerts_deletion_confirm: Etes-vous s&ucirc;r de vouloir &eacute;ffacer cette alerte?
-edit: Editer
+save: M�moriser
 delete: Effacer
 # new view
 newissuealerts_new: Cr&eacute;ation d&#39;une New Issue Alert pour <em>%s</em>
@@ -18,8 +18,8 @@ newissuealerts_creation_success: New Issue Alert cr&eacute;&eacute;e avec succ&e
 newissuealerts_creation_failed: New Issue Alert n&#39;a pu &ecirc;tre cr&eacute;&eacute;e
 newissuealerts_deletion_success: New Issue Alert &eacute;ffac&eacute;e avec succ&egrave;s
 newissuealerts_deletion_failed: New Issue Alert n&#39;a pu &ecirc;tre &eacute;ffac&eacute;e
-newissuealerts_update_success: New Issue Alert a &eacute;t&eacute; mis &agrave; jour avec succ&egrave;s
-newissuealerts_update_failed: New Issue Alert n&#39;a pu &ecirc;tre mis &agrave;
+newissuealerts_save_success: New Issue Alert a &eacute;t&eacute; mis &agrave; jour avec succ&egrave;s
+newissuealerts_save_failed: New Issue Alert n&#39;a pu &ecirc;tre mis &agrave;
 # mailer
 newissuealerts_footer: Vous avez reçu cet email parce que cette adresse email a été ajouté au plugin New Issue Alert
 
