@@ -41,7 +41,7 @@ The source of this plugin can be "cloned" from the GitHub-repo using:
 ==Installation
 
 - Download the plugin from the available source (see http://www.redmine.org/wiki/redmine/PluginNewIssueAlerts#Obtaining)
-- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins (this plugin does require a plugin database migration)
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins (<b>this plugin does require a plugin database migration</b>)
 - Migrate your plugin database scheme using <tt>rake db:migrate_plugins RAILS_ENV="production"</tt>
 - Restart Redmine
 
