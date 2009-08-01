@@ -17,7 +17,7 @@ en:
   newissuealerts_text: Create a New Issue Alert
   # controller
   newissuealerts_creation_success: New Issue Alert successfully created
-  newissuealerts_creation_failed: New Issue Alert could not be saved
+  newissuealerts_creation_failed: New Issue Alert could not be created
   newissuealerts_deletion_success: New Issue Alert successfully deleted
   newissuealerts_deletion_failed: New Issue Alert could not be deleted
   newissuealerts_save_success: New Issue Alert successfully saved
