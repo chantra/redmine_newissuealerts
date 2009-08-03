@@ -2,4 +2,5 @@ NewIssueAlerts THANKS:
 =======================
 
 * MischaTheEvil 
+* Eric Davis (edavis10) for pointing me to the right directions
 
