@@ -5,7 +5,7 @@ fr:
   enabled: Actif
   email_addresses_comma_separated: Les emails sont s&eacute;par&eacute;s par des virgules
   newissuealerts_deletion_confirm: Etes-vous s&ucirc;r de vouloir &eacute;ffacer cette alerte?
-  save: Sauvegarder
+  edit: Editer
   delete: Effacer
   # new view
   newissuealerts_new: Cr&eacute;ation d&#39;une New Issue Alert pour <em>%s</em>

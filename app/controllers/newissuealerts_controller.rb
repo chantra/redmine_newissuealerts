@@ -37,7 +37,7 @@ class NewissuealertsController < ApplicationController
         else
           flash.now[:error] = l(:newissuealerts_deletion_failed)
         end
-      elsif params[:save]
+      elsif params[:edit]
         if @newissuealert.update_attributes(params[:newissuealert])
           flash[:notice] = l(:newissuealerts_update_success) 
         else

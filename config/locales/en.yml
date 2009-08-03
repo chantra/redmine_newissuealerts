@@ -5,7 +5,7 @@ en:
   email_addresses: Email Addresses
   email_addresses_comma_separated: Emails are comma separated
   newissuealerts_deletion_confirm: Are you sure you want to delete this item?
-  save: Save
+  edit: Edit
   delete: Delete
   enabled: Enabled
   # new view
