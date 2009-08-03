@@ -1,13 +1,23 @@
-= newissuealerts
+=New Issue Alerts plugin
 
-Redmine NewIssueAlert is a Redmine plugin that sends an email to specified
+Redmine NewIssueAlerts is a Redmine plugin that sends an email to specified
 email addresses when a new issue is logged
 
-Created by Emmanuel Bretelle aka chantra <chantra_-_AT_-_debuntu_-_DOT_-_org>
+==Author
 
-= Purpose:
+* Emmanuel Bretelle aka chantra <chantra_-_AT_-_debuntu_-_DOT_-_org>
 
-This plugin can be use to make sure that a new issue is getting the exposure it needs. For instance, you might decide that
+==Changelog
+
+For the complete changelog see the <tt>CHANGELOG</tt>-file in the Redmine New Issue Alerts plugin directory.
+
+==Latest stable release
+
+The currently available, latest stable release of the plugin is version <b>0.0.2</b>.
+
+==Purpose
+
+This plugin can be used to make sure that a new issue is getting the exposure it needs. For instance, you might decide that
 any new issue logged on a specific project is sent to a distribution email address. People from that distribution email list 
 will then be able to triage the new issue and assign it to the right person.
 
@@ -16,21 +26,57 @@ This can, to some extend, resolve http://www.redmine.org/issues/408
 
 People from that group and/or manager will still have to assign the issue to the right person though.
 
-= Installation:
-To install the plugin, follow the steps in http://www.redmine.org/wiki/1/Plugins
+==Compatibility
 
-Don't forget to create the database with:
+This plugin is compatible with Redmine 0.8.x as well as with the current Redmine trunk.
 
-    rake db:migrate_plugins RAILS_ENV=production
+==Obtaining 
 
-= Usage:
+<i>URL of the GitHub repository: http://github.com/chantra/redmine_newissuealerts/tree/master</i>
+
+The source of this plugin can be "cloned" from the GitHub-repo using:
+
+<tt>$ cd {RAILS_ROOT}/vendor/plugins && git clone git://github.com/chantra/redmine_newissuealerts.git</tt>
+
+==Installation
+
+- Download the plugin from the available source (see http://www.redmine.org/wiki/redmine/PluginNewIssueAlerts#Obtaining)
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins (<b>this plugin does require a plugin database migration</b>)
+- Migrate your plugin database scheme using <tt>rake db:migrate_plugins RAILS_ENV="production"</tt>
+- Restart Redmine
+
+==Usage
 
 This plugin works on a per project basis.
-To enable it, go to Project->Settings->Modules and enable "Newissuealerts"
+To enable it, go to Project -> Settings -> Modules and enable "Newissuealerts"
 
-By default only redmine managers can access the plugin settings. Administrators need to enable access to project managers...
-through http://redmine.url/roles/report under the "Newissuealerts" section.
+By default only Redmine managers can access the plugin settings. Administrators need to enable access to project managers
+through <tt>http://redmine.url/roles/report</tt> under the "Newissuealerts" section.
 
 A tab called "Email on New Issue" will appear on project which have enabled the plugin providing that the user has enough credential.
 
-New Issue Alerts can be created/enabled/disabled from that page.
+New Issue Alerts can be created/enabled/disabled/deleted from that page.
+
+==Upgrading
+
+- Backup the currently deployed New Issue Alerts plugin (<tt>cp -r /vendor/plugins/redmine_newissuealerts /vendor/plugins/redmine_newissuealerts-backup</tt>)
+- Update the plugin using <tt>git pull</tt>
+- Restart your Redmine
+
+==Uninstalling
+
+- Remove the directory <i>"redmine_newissuealerts"</i> from the plugin-directory <i>"../vendor/plugins"</i>
+- Restart Redmine
+
+==Licensing
+
+This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html). See the included <tt>GPL.txt</tt> and <tt>LICENSE.txt</tt> files for details.
+
+* (C)2009, Emmanuel Bretelle aka chantra
+
+==Support
+
+If you would like to report a bug or request a new feature you can open a new issue at the issue-tracking section of the plugins' GitHub site: http://github.com/chantra/redmine_newissuealerts/issues.
+You can also post your feedback about the plugin in the dedicated plugin-section of the Redmine forums (http://www.redmine.org/projects/redmine/boards/3)
+
+As an alternative you can also join the <tt>#redmine</tt> channel on the "freenode IRC network" (http://freenode.net/irc_servers.shtml) to see if there is anyone who can provide some support.

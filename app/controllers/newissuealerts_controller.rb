@@ -37,11 +37,11 @@ class NewissuealertsController < ApplicationController
         else
           flash.now[:error] = l(:newissuealerts_deletion_failed)
         end
-      elsif params[:edit]
+      elsif params[:save]
         if @newissuealert.update_attributes(params[:newissuealert])
-          flash[:notice] = l(:newissuealerts_update_success) 
+          flash[:notice] = l(:newissuealerts_save_success) 
         else
-          flash.now[:error] = l(:newissuealerts_update_failed)
+          flash.now[:error] = l(:newissuealerts_save_failed)
         end
       end
       redirect_to :action => 'index', :project_id => @project.identifier
