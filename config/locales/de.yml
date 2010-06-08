@@ -1,0 +1,26 @@
+# German strings go here
+#edit view
+newissuealerts_edit: Ticketalarme bearbeiten für <em>%s</em>
+email_addresses: E-Mailadressen
+email_addresses_comma_separated: E-Mailadressen werden mit Komma getrennt
+newissuealerts_deletion_confirm: Möchten Sie diesen Eintrag wirklich löschen?
+enabled: Aktiviert
+save: Speichern
+delete: Löschen
+# new view
+newissuealerts_new: Ticketalarm erstellen für <em>%s</em>
+create: Anlegen
+# index view
+newissuealerts_index: Ticketalarme für <em>%s</em>
+edit_delete: Bearbeiten/Löschen
+newissuealerts_text: Neuen Ticketalarm anlegen
+# controller
+newissuealerts_creation_success: Neuer Ticketalarm wurde erstellt.
+newissuealerts_creation_failed: Neuer Ticketalarm konnte nicht angelegt werden.
+newissuealerts_deletion_success: Ticketalarm wurde erfolgreich gelöscht.
+newissuealerts_deletion_failed: Ticketalarm konnte nicht gelöscht werden.
+newissuealerts_save_success: Ticketalarm wurde erfolgreich gespeichert.
+newissuealerts_save_failed: Ticketalarm konnte nicht gespeichert werden.
+# mailer
+newissuealerts_footer: Sie erhalten diese Benachrichtigung, weil diese E-Mailadresse für einen Ticketalarm aktiviert wurde.
+
