@@ -1,5 +1,7 @@
 # German strings go here
 de:
+  #menu entry
+  newissuealert_menuitem: Ticketalarm
   #edit view
   newissuealerts_edit: Ticketalarme bearbeiten für <em>%s</em>
   email_addresses: E-Mailadressen

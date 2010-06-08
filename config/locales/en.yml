@@ -1,5 +1,7 @@
 # English strings go here
 en:
+  #menu entry
+  newissuealert_menuitem: Email on New Issue
   #edit view
   newissuealerts_edit: Editing New Issue Alert for <em>%s</em>
   email_addresses: Email Addresses

@@ -32,5 +32,5 @@ Redmine::Plugin.register :redmine_newissuealerts do
   
   # A new item is added to the project menu
   #menu :project_menu, :newissuealerts, { :controller => 'newissuealerts', :action => 'index' }, :caption => 'New Issue Alerts', :after => :activity, :param => :project_id
-  menu :project_menu, :newissuealerts, { :controller => 'newissuealerts', :action => 'index' }, :caption => 'Email on New Issue', :param => :project_id
+  menu :project_menu, :newissuealerts, { :controller => 'newissuealerts', :action => 'index' }, :caption => :newissuealert_menuitem, :param => :project_id
 end

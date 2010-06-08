@@ -1,4 +1,6 @@
 fr:
+  #menu entry
+  newissuealert_menuitem: Email on New Issue
   #edit view
   newissuealerts_edit: Edition de New Issue Alert pour <em>%s</em>
   email_addresses: Adresses Emails

@@ -1,5 +1,7 @@
 # Dutch strings go here
 nl:
+  #menu entry
+  newissuealert_menuitem: Email on New Issue
   #edit view
   newissuealerts_edit: Wijzigen Nieuwe Issues Notificatie voor <em>%s</em>
   email_addresses: E-mail adressen
