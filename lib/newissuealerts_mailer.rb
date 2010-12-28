@@ -10,16 +10,13 @@ class NewissuealertsMailer < Mailer
                     'Issue-Id' => issue.id,
                     'Issue-Author' => author.login
     redmine_headers 'Issue-Assignee' => issue.assigned_to.login if issue.assigned_to
-
-    content_type "multipart/alternative"
-
+    message_id issue
     recipients email
     subject "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] (#{issue.status.name}) #{issue.subject}"
     body = {
          :issue => issue,
          :issue_url => url_for(:controller => 'issues', :action => 'show', :id => issue)
     }
-    part :content_type => "text/plain", :body => render(:file => "newissuealert.text.plain.rhtml", :body => body, :layout => 'mailer.text.plain.erb')
-    part :content_type => "text/html", :body => render_message("newissuealert.text.html.rhtml", body)
+    render_multipart('newissuealert', body)
   end
 end
