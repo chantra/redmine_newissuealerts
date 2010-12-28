@@ -19,7 +19,7 @@ class NewissuealertsMailer < Mailer
          :issue => issue,
          :issue_url => url_for(:controller => 'issues', :action => 'show', :id => issue)
     }
-    part :content_type => "text/plain", :body => render_message("newissuealert.text.plain.rhtml", body)
+    part :content_type => "text/plain", :body => render(:file => "newissuealert.text.plain.rhtml", :body => body, :layout => 'mailer.text.plain.erb')
     part :content_type => "text/html", :body => render_message("newissuealert.text.html.rhtml", body)
   end
 end
