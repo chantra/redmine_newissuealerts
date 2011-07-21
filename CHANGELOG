@@ -1,3 +1,9 @@
+0.0.3 undef:
+    * Support:
+      * Remove support for redmine 0.8
+    * Fixes:
+      * showing %s insted of project name
+
 0.0.2 (2009-08-01):
     * Improved documentation and licensing
     * Fixed Redmine trunk compatibility:

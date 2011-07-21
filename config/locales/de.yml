@@ -3,7 +3,7 @@ de:
   #menu entry
   newissuealert_menuitem: Ticketalarm
   #edit view
-  newissuealerts_edit: Ticketalarme bearbeiten für <em>%s</em>
+  newissuealerts_edit: Ticketalarme bearbeiten für <em>{{project}}</em>
   email_addresses: E-Mailadressen
   email_addresses_comma_separated: E-Mailadressen werden mit Komma getrennt
   newissuealerts_deletion_confirm: Möchten Sie diesen Eintrag wirklich löschen?
@@ -11,10 +11,10 @@ de:
   save: Speichern
   delete: Löschen
   # new view
-  newissuealerts_new: Ticketalarm erstellen für <em>%s</em>
+  newissuealerts_new: Ticketalarm erstellen für <em>{{project}}</em>
   create: Anlegen
   # index view
-  newissuealerts_index: Ticketalarme für <em>%s</em>
+  newissuealerts_index: Ticketalarme für <em>{{project}}</em>
   edit_delete: Bearbeiten/Löschen
   newissuealerts_text: Neuen Ticketalarm anlegen
   # controller

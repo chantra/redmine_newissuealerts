@@ -3,7 +3,7 @@ nl:
   #menu entry
   newissuealert_menuitem: Email on New Issue
   #edit view
-  newissuealerts_edit: Wijzigen Nieuwe Issues Notificatie voor <em>%s</em>
+  newissuealerts_edit: Wijzigen Nieuwe Issues Notificatie voor <em>{{project}}</em>
   email_addresses: E-mail adressen
   email_addresses_comma_separated: E-mail adressen moeten worden gescheiden met komma's
   newissuealerts_deletion_confirm: Weet u zeker dat u deze Nieuwe Issues Notificatie wilt verwijderen?
@@ -11,10 +11,10 @@ nl:
   delete: Verwijderen
   enabled: Actief
   # new view
-  newissuealerts_new: Aanmaken Nieuwe Issues Notificatie voor <em>%s</em>
+  newissuealerts_new: Aanmaken Nieuwe Issues Notificatie voor <em>{{project}}</em>
   create: Aanmaken
   # index view
-  newissuealerts_index: Nieuwe Issues Notificatie lijst for <em>%s</em>
+  newissuealerts_index: Nieuwe Issues Notificatie lijst for <em>{{project}}</em>
   edit_delete: Wijzigen/Verwijderen
   newissuealerts_text: Maak Nieuwe Issues Notificatie aan
   # controller

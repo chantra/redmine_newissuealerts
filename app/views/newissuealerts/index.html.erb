@@ -1,4 +1,4 @@
-<h2><%= l(:newissuealerts_index, @project.name) %></h2>
+<h2><%= l(:newissuealerts_index, :project => @project.name) %></h2>
 <p>
 <%= link_to(l(:newissuealerts_text), {:action => 'new', :project_id => @project.identifier}, :class => 'icon icon-add' ) %> 
 </p>

@@ -2,7 +2,7 @@ fr:
   #menu entry
   newissuealert_menuitem: Email on New Issue
   #edit view
-  newissuealerts_edit: Edition de New Issue Alert pour <em>%s</em>
+  newissuealerts_edit: Edition de New Issue Alert pour <em>{{project}}</em>
   email_addresses: Adresses Emails
   enabled: Actif
   email_addresses_comma_separated: Les emails sont s&eacute;par&eacute;s par des virgules
@@ -10,10 +10,10 @@ fr:
   save: Sauvegarder
   delete: Effacer
   # new view
-  newissuealerts_new: Cr&eacute;ation d&#39;une New Issue Alert pour <em>%s</em>
+  newissuealerts_new: Cr&eacute;ation d&#39;une New Issue Alert pour <em>{{project}}</em>
   create: Cr&eacute;er
   # index view
-  newissuealerts_index: Liste des New Issue Alert pour <em>%s</em>
+  newissuealerts_index: Liste des New Issue Alert pour <em>{{project}}</em>
   edit_delete: Editer/Effacer
   newissuealerts_text: Cr&eacute;er une New Issue Alert
   # controller
