@@ -3,4 +3,5 @@ NewIssueAlerts THANKS:
 
 * MischaTheEvil 
 * Eric Davis (edavis10) for pointing me to the right directions
+* Jason Butz (jbutz) https://github.com/jbutz for handling Redmine 1.2 private issues
 
