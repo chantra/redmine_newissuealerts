@@ -1,18 +1,20 @@
 0.0.3 undef:
-    * Support:
-      * Remove support for redmine 0.8
-    * Fixes:
-      * showing %s insted of project name
+  * Support:
+    * Remove support for redmine 0.8
+  * Fixes:
+    * showing %s instead of project name
+  * Features:
+    * Dont send notification for private issues (tks jbutz)
 
 0.0.2 (2009-08-01):
-    * Improved documentation and licensing
-    * Fixed Redmine trunk compatibility:
-      - added Rails 2.2.x i18n from converted gloc i18n
-      - fixed mailer errors due to mail-handling in the Redmine trunk
-    * Renamed edit-button in the edit-view (including name-param and i18n)
-    * Added Dutch translations
-    * Cleaned init.rb
-    * Fixed layout of new view
+  * Improved documentation and licensing
+  * Fixed Redmine trunk compatibility:
+    * added Rails 2.2.x i18n from converted gloc i18n
+    * fixed mailer errors due to mail-handling in the Redmine trunk
+  * Renamed edit-button in the edit-view (including name-param and i18n)
+  * Added Dutch translations
+  * Cleaned init.rb
+  * Fixed layout of new view
 
 0.0.1 (2009-07-28):
-    - Initial public release
+  * Initial public release
