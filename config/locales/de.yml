@@ -7,9 +7,10 @@ de:
   email_addresses: E-Mailadressen
   email_addresses_comma_separated: E-Mailadressen werden mit Komma getrennt
   newissuealerts_deletion_confirm: Möchten Sie diesen Eintrag wirklich löschen?
-  enabled: Aktiviert
   save: Speichern
   delete: Löschen
+  enabled: Aktiviert
+  newissuealerts_set_priority: Priority
   # new view
   newissuealerts_new: Ticketalarm erstellen für <em>{{project}}</em>
   create: Anlegen

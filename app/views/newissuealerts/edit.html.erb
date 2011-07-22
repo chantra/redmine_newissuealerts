@@ -9,6 +9,9 @@
   <p>
    <%= f.label l(:enabled) %> <%= f.check_box :enabled %> 
   </p>
+  <p>
+    <%= f.label l(:newissuealerts_set_priority) %> <%= f.check_box :priority %>
+  </p>
   <p>  <%= submit_tag l(:save), :name => "save" %> <%= submit_tag l(:delete), :name => "delete", :confirm => l(:newissuealerts_deletion_confirm) %> </p>
 </div>
 <% end %>

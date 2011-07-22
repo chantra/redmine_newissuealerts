@@ -10,6 +10,7 @@ en:
   save: Save
   delete: Delete
   enabled: Enabled
+  newissuealerts_set_priority: Priority
   # new view
   newissuealerts_new: Creating a New Issue Alert for <em>{{project}}</em>
   create: Create

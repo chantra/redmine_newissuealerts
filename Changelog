@@ -5,6 +5,7 @@
     * showing %s instead of project name
   * Features:
     * Dont send notification for private issues (tks jbutz)
+    * Allow setting Email priority (fixes GH#6)
 
 0.0.2 (2009-08-01):
   * Improved documentation and licensing

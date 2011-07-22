@@ -4,11 +4,12 @@ fr:
   #edit view
   newissuealerts_edit: Edition de New Issue Alert pour <em>{{project}}</em>
   email_addresses: Adresses Emails
-  enabled: Actif
   email_addresses_comma_separated: Les emails sont s&eacute;par&eacute;s par des virgules
   newissuealerts_deletion_confirm: Etes-vous s&ucirc;r de vouloir &eacute;ffacer cette alerte?
   save: Sauvegarder
   delete: Effacer
+  enabled: Actif
+  newissuealerts_set_priority: Priorit&eacute;
   # new view
   newissuealerts_new: Cr&eacute;ation d&#39;une New Issue Alert pour <em>{{project}}</em>
   create: Cr&eacute;er

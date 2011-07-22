@@ -1,7 +1,7 @@
 require "mailer"
 
 class NewissuealertsMailer < Mailer
-  def newissuealert( email, issue)
+  def newissuealert( email, issue, newissuealert)
     project = issue.project
     tracker = issue.tracker
     author = issue.author
@@ -10,6 +10,7 @@ class NewissuealertsMailer < Mailer
                     'Issue-Id' => issue.id,
                     'Issue-Author' => author.login
     redmine_headers 'Issue-Assignee' => issue.assigned_to.login if issue.assigned_to
+    headers 'X-Priority' => 1, 'Importance' => 'High', 'X-MSMail-Priority' => 'High' if newissuealert.priority
     message_id issue
     recipients email
     subject "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] (#{issue.status.name}) #{issue.subject}"

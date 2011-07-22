@@ -9,7 +9,7 @@ email addresses when a new issue is logged
 
 ==Changelog
 
-For the complete changelog see the <tt>CHANGELOG</tt>-file in the Redmine New Issue Alerts plugin directory.
+For the complete changelog see the <tt>Changelog</tt>-file in the Redmine New Issue Alerts plugin directory.
 
 ==Latest stable release
 
@@ -30,7 +30,7 @@ People from that group and/or manager will still have to assign the issue to the
 
 This plugin should compatible with Redmine 0.9.x, 1.x as well as with the current Redmine trunk.
 
-It was last tried against Redmine 1.2.1
+It was last tested against Redmine 1.2.1
 
 ==Obtaining 
 
@@ -58,6 +58,8 @@ through <tt>http://redmine.url/roles/report</tt> under the "Newissuealerts" sect
 A tab called "Email on New Issue" will appear on project which have enabled the plugin providing that the user has enough credential.
 
 New Issue Alerts can be created/enabled/disabled/deleted from that page.
+
+While an option to set email priority is accessible, priority is not a standard email header and behaviour might depend on each email client.
 
 ==Upgrading
 

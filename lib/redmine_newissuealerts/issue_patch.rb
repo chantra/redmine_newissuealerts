@@ -46,8 +46,8 @@ module RedmineNewissuealerts
       newissuealerts = Newissuealert.find(:all, :conditions => { :project_id => project.id } )
       newissuealerts.each do |n|
         if n.enabled
-          n.mail_addresses.each do |e|
-            NewissuealertsMailer.deliver_newissuealert(e, self)
+          n.mail_addresses.split(",").each do |e|
+            NewissuealertsMailer.deliver_newissuealert(e, self, n)
           end
         end
       end 
