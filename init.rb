@@ -16,6 +16,8 @@ Redmine::Plugin.register :redmine_newissuealerts do
   author 'Emmanuel Bretelle'
   description 'Send an email to a list of addresses when a new issue is created'
   version '0.0.2'
+  author_url 'http://www.debuntu.org'
+  url 'http://redmine.debuntu.org/projects/redmine-newissuealerts'
   
   # This plugin adds a project module
   # It can be enabled/disabled at project level (Project settings -> Modules)
