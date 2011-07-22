@@ -11,7 +11,7 @@ module RedmineNewissuealerts
 
         after_create :newissue_created
       
-        # Add visible to Redmine 0.8.x
+        # Add visible to Redmine
         unless respond_to?(:visible)
           named_scope :visible, lambda {|*args| { :include => :project,
                                                   :conditions => Project.allowed_to_condition(args.first || User.current, :view_issues) } }
@@ -26,6 +26,13 @@ module RedmineNewissuealerts
 
   module InstanceMethods
     def newissue_created
+      # Redmine 1.2+ return if issue is private
+      if self.respond_to?("is_private")
+        if self.is_private?
+          # TODO debug logs
+          return ''
+        end
+      end
       project=Project.find(self.project_id)
       subject = self.subject
       tracker = Tracker.find(self.tracker_id)
