@@ -2,11 +2,7 @@ class NewissuealertsController < ApplicationController
   unloadable
   before_filter :find_project, :authorize, :only => [:index, :new, :edit]
   def index
-    @newissuealerts = Newissuealert.find(:all, :conditions => { :project_id => @project.id } )
-    @projects = []
-    Project.all.each do |proj|
-      @projects[proj.id] =  proj
-    end
+    render('projects/settings/_newissuealerts')
   end
   
   def new
@@ -24,7 +20,7 @@ class NewissuealertsController < ApplicationController
       else
         flash.now[:error] = l(:newissuealerts_creation_failed)
       end
-      redirect_to :action => 'index', :project_id => @project.identifier
+      redirect_to :controller => "projects", :action => 'settings', :id => @project.identifier, :tab => 'newissuealerts'
     end
   end
 
@@ -44,9 +40,9 @@ class NewissuealertsController < ApplicationController
           flash.now[:error] = l(:newissuealerts_save_failed)
         end
       end
-      redirect_to :action => 'index', :project_id => @project.identifier
-     end
+      redirect_to :controller => "projects", :action => 'settings', :id => @project.identifier, :tab => 'newissuealerts'
     end
+  end
 
 
   private

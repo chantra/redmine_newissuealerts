@@ -1,0 +1,21 @@
+<% can_new = User.current.allowed_to?(:new_newissuealerts, @project) 
+can_edit = User.current.allowed_to?(:edit_newissuealerts, @project)
+%>
+<h2><%= l(:newissuealerts_index, :project => @project.name) %></h2>
+<% if can_new %>
+<p>
+<%= link_to(l(:newissuealerts_text), {:controller => 'newissuealerts', :action => 'new', :project_id => @project.identifier}, :class => 'icon icon-add' ) %> 
+</p>
+<% end %>
+<% @newissuealerts = Newissuealert.find(:all, :conditions => { :project_id => @project.id } ) %>
+<% for newissuealert in @newissuealerts %> 
+<div class="box tabular settings">
+<p><label><%= l(:email_addresses) %>:</label> <%= newissuealert.mail_addresses %></p>
+<p><label><%= l(:enabled) %>:</label> <%= newissuealert.enabled ? l(:general_text_yes) : l(:general_text_no) %></p>
+<p><label><%= l(:newissuealerts_set_priority) %>:</label> <%= newissuealert.priority ? l(:general_text_yes) : l(:general_text_no) %></p>
+<% if can_edit %>
+<p><%= link_to l(:edit_delete), {:controller => 'newissuealerts', :action => 'edit', :id => newissuealert.id, :project_id => @project.identifier } %></p>
+<% end %>
+</div>
+<% end %> 
+
