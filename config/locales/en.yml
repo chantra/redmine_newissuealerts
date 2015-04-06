@@ -3,7 +3,7 @@ en:
   #menu entry
   newissuealert_menuitem: Email on New Issue
   #edit view
-  newissuealerts_edit: Editing New Issue Alert for <em>{{project}}</em>
+  newissuealerts_edit: Editing New Issue Alert for %{project}
   email_addresses: Email Addresses
   email_addresses_comma_separated: Emails are comma separated
   newissuealerts_deletion_confirm: Are you sure you want to delete this item?
@@ -12,10 +12,10 @@ en:
   enabled: Enabled
   newissuealerts_set_priority: Priority
   # new view
-  newissuealerts_new: Creating a New Issue Alert for <em>{{project}}</em>
+  newissuealerts_new: Creating a New Issue Alert for %{project}
   create: Create
   # index view
-  newissuealerts_index: Listing of New Issue Alert for <em>{{project}}</em>
+  newissuealerts_index: Listing of New Issue Alert for %{project}
   edit_delete: Edit/Delete
   newissuealerts_text: Create a New Issue Alert
   # controller
