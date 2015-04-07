@@ -47,7 +47,7 @@ module RedmineNewissuealerts
       newissuealerts.each do |n|
         if n.enabled
           n.mail_addresses.split(",").each do |e|
-            NewissuealertsMailer.deliver_newissuealert(e, self, n)
+            NewissuealertsMailer.newissuealert(e, self, n).deliver
           end
         end
       end 
