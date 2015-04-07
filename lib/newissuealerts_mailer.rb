@@ -12,12 +12,12 @@ class NewissuealertsMailer < Mailer
     redmine_headers 'Issue-Assignee' => issue.assigned_to.login if issue.assigned_to
     headers 'X-Priority' => 1, 'Importance' => 'High', 'X-MSMail-Priority' => 'High' if newissuealert.priority
     message_id issue
-    recipients email
-    subject "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] (#{issue.status.name}) #{issue.subject}"
-    body = {
-         :issue => issue,
-         :issue_url => url_for(:controller => 'issues', :action => 'show', :id => issue)
-    }
-    render_multipart('newissuealert', body)
+
+    @issue_url = url_for(:controller => 'issues', :action => 'show', :id => issue)
+    @issue = issue
+
+    mail :to => email,
+      :subject => "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] (#{issue.status.name}) #{issue.subject}"
+
   end
 end

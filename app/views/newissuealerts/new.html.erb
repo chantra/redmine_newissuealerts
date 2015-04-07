@@ -1,6 +1,5 @@
 <h2><%= l(:newissuealerts_new, :project => @project.name) %></h2>
-<% form_for :newissuealert, @newissuealert, :url => { :project_id => @project.identifier } do |f| %>
-  <%= f.error_messages %> 
+<%= form_for Newissuealert.new, :url => { :project_id => @project.identifier } do |f| %>
 <div class="box tabular settings">
   <p>
     <%= f.label l(:email_addresses) %> <%= f.text_field :mail_addresses %>

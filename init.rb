@@ -1,8 +1,7 @@
 require 'redmine'
 
 # Patches to the Redmine core.
-require 'dispatcher'
-Dispatcher.to_prepare :redmine_newissuealerts do
+ActionDispatch::Callbacks.to_prepare do
   require_dependency 'issue'
   # Guards against including the module multiple time (like in tests)
   # and registering multiple callbacks

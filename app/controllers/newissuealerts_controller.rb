@@ -26,14 +26,14 @@ class NewissuealertsController < ApplicationController
 
   def edit
     @newissuealert = Newissuealert.find(params[:id])
-    if request.post?
-      if params[:delete]
+    if request.put?
+      if params[:commit] == "Delete"
         if @newissuealert.destroy
           flash[:notice] = l(:newissuealerts_deletion_success)
         else
           flash.now[:error] = l(:newissuealerts_deletion_failed)
         end
-      elsif params[:save]
+      elsif params[:commit] == "Save"
         if @newissuealert.update_attributes(params[:newissuealert])
           flash[:notice] = l(:newissuealerts_save_success) 
         else
